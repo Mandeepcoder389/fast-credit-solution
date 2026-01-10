@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://firstcreditsolution.netlify.app/sitemap.xml
