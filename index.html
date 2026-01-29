@@ -46,6 +46,9 @@
   <meta name="theme-color" content="#020617" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <!-- Site branding for Google Search -->
+  <meta name="google" content="nositelinkssearchbox" />
+  <link rel="alternate" type="application/json+ld" href="data:application/json+ld,%7B%22%40context%22:%22https://schema.org%22,%22%40type%22:%22WebSite%22,%22name%22:%22Fast Credit Solution%22,%22url%22:%22https://fastcreditsolution.netlify.app%22%7D" />
   <!-- Preconnect to external resources -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="preconnect" href="https://kit.fontawesome.com" />
@@ -89,7 +92,7 @@
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">☰</button>
     </div>
   </header>
-  <main>
+  <main id="main-content">
 
     <!-- HERO SECTION -->
     <section id="home" class="hero">
@@ -997,6 +1000,34 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fast Credit Solution",
+  "alternateName": "FastCredit Solutions",
+  "url": "https://fastcreditsolution.netlify.app/",
+  "logo": "https://fastcreditsolution.netlify.app/assest/favicon.png",
+  "description": "Fast Credit Solution - Best loan agent near me in Kolkata offering instant personal, home, business and Mudra loans with fast approval.",
+  "sameAs": [],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+91-8101909337",
+    "email": "sonufastcreditsolutions@gmail.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3B5/2, Baguihati, Raipur Road",
+    "addressLocality": "Kolkata",
+    "addressRegion": "West Bengal",
+    "postalCode": "700059",
+    "addressCountry": "IN"
+  },
+  "areaServed": ["IN-WB", "Kolkata", "West Bengal", "India"]
+}
+</script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FinancialService",
   "name": "Fast Credit Solution",
   "url": "https://fastcreditsolution.netlify.app/",
@@ -1097,6 +1128,60 @@
         "text": " Personal and business loan approvals usually take <strong>24 to 72 working
                 hours</strong> after document verification, depending on bank or NBFC process."
       }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Fast Credit Solution",
+  "alternateName": "FastCredit Solutions",
+  "url": "https://fastcreditsolution.netlify.app/",
+  "description": "Fast Credit Solution - Get instant personal, home & business loans with fast approval in Kolkata, West Bengal",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fast Credit Solution",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fastcreditsolution.netlify.app/assest/favicon.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://fastcreditsolution.netlify.app/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://fastcreditsolution.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Personal Loans",
+      "item": "https://fastcreditsolution.netlify.app/#loans"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Contact",
+      "item": "https://fastcreditsolution.netlify.app/#contact"
     }
   ]
 }
