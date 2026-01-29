@@ -49,37 +49,44 @@
   <!-- Preconnect to external resources -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="preconnect" href="https://kit.fontawesome.com" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="dns-prefetch" href="https://upload.wikimedia.org" />
+  <link rel="dns-prefetch" href="https://consumer.cibil.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </noscript>
 
 </head>
 
 <body>
 
   <!-- HEADER / NAVBAR -->
-  <header class="header">
+  <header class="header" role="banner">
     <div class="container nav">
       <div class="logo">
-        <img src="./assest/favicon.png" alt="logo"> FastCredit <span>Solutions</span>
+        <img src="./assest/favicon.png" alt="FastCredit Solutions Logo" width="40" height="40"> FastCredit <span>Solutions</span>
       </div>
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main Navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#loans">Loans</a>
         <a href="#process">Process</a>
         <a href="#eligibility">Eligibility</a>
-        <a href="#emi">EMI</a>
+        <a href="#emi">EMI Calculator</a>
         <a href="#contact">Contact</a>
         <a href="#faq">FAQ</a>
 
-        <button class="btn-primary" onclick="scrollToSection('contact')">
+        <button class="btn-primary" onclick="scrollToSection('contact')" aria-label="Apply for a loan">
           Apply
         </button>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">☰</button>
     </div>
   </header>
   <main>
@@ -88,7 +95,7 @@
     <section id="home" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="badge">Instant online approval • Zero hidden charges</p>
+          <p class="badge" aria-label="Quick features">Instant online approval • Zero hidden charges</p>
           <h1>
             Get <span>Fast, Secure</span> Loans For Every Need.
           </h1>
@@ -96,14 +103,14 @@
             Personal, Home & Business loans with transparent rates and flexible EMI options. Your trusted loan agent near you in Kolkata.
           </p>
           <div class="hero-actions">
-            <button class="btn-primary" onclick="scrollToSection('contact')">
+            <button class="btn-primary" onclick="scrollToSection('contact')" aria-label="Apply for a loan now">
               Apply Now
             </button>
-            <button class="btn-secondary" onclick="scrollToSection('emi')">
+            <button class="btn-secondary" onclick="scrollToSection('emi')" aria-label="Calculate your EMI payment">
               Calculate EMI
             </button>
           </div>
-          <div class="hero-tags">
+          <div class="hero-tags" aria-label="Loan types available">
             <span class="badge">Home Loan</span>
             <span class="badge">Mortage Loan</span>
             <span class="badge">Insurance</span>
@@ -111,7 +118,7 @@
           </div>
         </div>
         <div class="hero-image clean-hero">
-          <img src="./assest/heroimage.jpg" alt="Fast Credit Solution - Get Instant Loans Online" class="hero-main-img" loading="lazy" />
+          <img src="./assest/heroimage.jpg" alt="Fast Credit Solutions - Get instant loans online in Kolkata with minimal documentation" class="hero-main-img" loading="lazy" width="600" height="400" />
           <span class="loan-pill pill-instant">Fast Credit</span>
           <span class="loan-pill pill-personal">Personal Loan</span>
           <span class="loan-pill pill-car">Car Loan</span>
@@ -149,9 +156,9 @@
     <!-- LOAN PRODUCTS -->
     <section id="loans" class="section card-section">
       <div class="container">
-        <h2 class="section-title">Our Loan Products - Fast Credit Solutions in Kolkata</h2>
+        <h2 class="section-title">Our Loan Products</h2>
         <p class="section-subtitle">
-          Get personal loans, home loans, business loans and all types of loans with fast approval from our loan agent near you in Kolkata.
+          Get personal loans, home loans, business loans and all types of loans.
         </p>
         <div class="cards">
           <article class="card personal-loan">
@@ -263,21 +270,19 @@
     <section class="section gray-section">
       <div class="container why-grid">
         <div>
-          <h2 class="section-title">Why Choose Us - Loan Agent Near Me?</h2>
+          <h2 class="section-title">Why Choose Us</h2>
           <p class="section-subtitle">
             We are the best loan consultant and loan agent near you in Kolkata, offering fast credit solutions with complete support from application to disbursement.
           </p>
           <ul class="why-list">
             <li>✔ 100% digital application — no branch visits</li>
-            <li>✔ Fastest approval in Kolkata - 24 to 48 hours</li>
             <li>✔ Transparent fees and zero hidden charges</li>
-            <li>✔ Local loan agent support in Kolkata & West Bengal</li>
             <li>✔ Personal loans, home loans, all types of loans available</li>
             <li>✔ Easy pre-closure and part-payment options</li>
           </ul>
         </div>
         <div class="highlight-box">
-          <h3>Get Loan in Kolkata - Quick Eligibility Check</h3>
+          <h3>Get Loan- Quick Eligibility Check</h3>
           <ul>
             <li>Age: 21 – 60 years</li>
             <li>Minimum monthly income: ₹15,000 (₹20,000 for metro)</li>
@@ -345,39 +350,6 @@
       </div>
     </section>
 
-    <!-- LOAN AGENT NEAR ME SECTION -->
-    <section class="section trust-section">
-      <div class="container trust-grid">
-        <div class="trust-content">
-          <span class="trust-badge">Your Trusted Loan Agent Near Me</span>
-          <h2>
-            Best Loan Agent in <span>Kolkata, West Bengal</span>
-          </h2>
-          <p>
-            FastCredit Solutions is your <strong>loan agent near me</strong> in Kolkata offering fast credit solutions. We provide personal loans, home loans, business loans and all types of loans with instant approval.
-          </p>
-          <p>
-            Get loans in Kolkata within 24-48 hours with minimal documentation. We are the <strong>best loan consultant</strong> serving Kolkata, Howrah, Barasat, Durgapur and all of West Bengal.
-          </p>
-        </div>
-        <div class="trust-stats">
-          <div class="trust-card">
-            <h3>Fast</h3>
-            <span>Loan Approval in Kolkata</span>
-          </div>
-          <div class="trust-card">
-            <h3>Secure</h3>
-            <span>Trusted Loan Agent Network</span>
-          </div>
-          <div class="trust-card">
-            <h3>Local</h3>
-            <span>Serving Kolkata & West Bengal</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
     <!-- PARTNERS SECTION -->
     <section class="section partners-section">
       <div class="container">
@@ -389,12 +361,12 @@
           </p>
         </div>
 
-        <div class="partners-grid">
-          <div class="partner-card"><img src="./assest/partrners/hdfc.png" alt="HDFC Bank"></div>
-          <div class="partner-card"><img src="./assest/partrners/icici.png" alt="ICICI Bank"></div>
-          <div class="partner-card"><img src="./assest/partrners/kotak.png" alt="Kotak Bank"></div>
-          <div class="partner-card"><img src="./assest/partrners/yes.png" alt="Yes Bank"></div>
-          <div class="partner-card"><img src="./assest/partrners/axis.png" alt="Axis Bank"></div>
+        <div class="partners-grid" aria-label="Our banking and NBFC partners">
+          <div class="partner-card"><img src="./assest/partrners/hdfc.png" alt="HDFC Bank" width="120" height="60" loading="lazy"></div>
+          <div class="partner-card"><img src="./assest/partrners/icici.png" alt="ICICI Bank" width="120" height="60" loading="lazy"></div>
+          <div class="partner-card"><img src="./assest/partrners/kotak.png" alt="Kotak Bank" width="120" height="60" loading="lazy"></div>
+          <div class="partner-card"><img src="./assest/partrners/yes.png" alt="Yes Bank" width="120" height="60" loading="lazy"></div>
+          <div class="partner-card"><img src="./assest/partrners/axis.png" alt="Axis Bank" width="120" height="60" loading="lazy"></div>
           <div class="partner-card"><img src="./assest/partrners/bajaj-finserv.png" alt="Bajaj Finserv"></div>
           <div class="partner-card"><img src="./assest/partrners/indiabulls.png" alt="india bulls"></div>
           <div class="partner-card"><img src="./assest/partrners/indusind.png" alt="indusind bank"></div>
@@ -645,12 +617,12 @@
     <section id="faq" class="section gray-section">
       <div class="container">
         <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list">
+        <div class="faq-list" role="region" aria-label="Frequently asked questions">
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
               <span>What credit score is required to get a loan in India?</span>
-              <span class="faq-toggle">+</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
               Most banks and NBFCs prefer a credit score of <strong>650 or above</strong>.
@@ -772,24 +744,24 @@
           <p class="section-subtitle left">
             Share your details and our loan specialist will contact you with the best offers.
           </p>
-          <form id="contactForm">
+          <form id="contactForm" aria-label="Loan application form">
             <div class="form-row">
-              <label>Full Name</label>
-              <input type="text" name="name" placeholder="Your name" required />
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="name" placeholder="Your name" required aria-required="true" />
             </div>
             <div class="form-row two-col">
               <div>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="you@example.com" required />
+                <label for="emailField">Email *</label>
+                <input type="email" id="emailField" name="email" placeholder="you@example.com" required aria-required="true" />
               </div>
               <div>
-                <label>Mobile Number</label>
-                <input type="tel" name="mobile" placeholder="10-digit mobile" required />
+                <label for="mobileField">Mobile Number *</label>
+                <input type="tel" id="mobileField" name="mobile" placeholder="10-digit mobile" required aria-required="true" />
               </div>
             </div>
             <div class="form-row">
-              <label>Loan Type</label>
-              <select name="loanType" required>
+              <label for="loanTypeSelect">Loan Type *</label>
+              <select id="loanTypeSelect" name="loanType" required aria-required="true">
                 <option value="">Select</option>
                 <option>Personal Loan</option>
                 <option>Home Loan</option>
@@ -803,18 +775,19 @@
               </select>
             </div>
             <div class="form-row">
-              <label>Loan Amount</label>
-              <input type="number" name="loanAmount" placeholder="e.g. 500000" required />
+              <label for="loanAmountField">Loan Amount *</label>
+              <input type="number" id="loanAmountField" name="loanAmount" placeholder="e.g. 500000" required aria-required="true" />
             </div>
             <div class="form-row">
-              <label>Monthly Income</label>
-              <input type="number" name="monthlyIncome" placeholder="e.g. 50000" required />
+              <label for="incomeField">Monthly Income *</label>
+              <input type="number" id="incomeField" name="monthlyIncome" placeholder="e.g. 50000" required aria-required="true" />
             </div>
             <div class="form-row">
-              <label>Your Requirement</label>
-              <textarea name="requirement" rows="3" placeholder="Share a brief about your requirement"></textarea>
+              <label for="requirementField">Your Requirement</label>
+              <textarea id="requirementField" name="requirement" rows="3" placeholder="Share a brief about your requirement" aria-describedby="requirementHint"></textarea>
+              <small id="requirementHint">Optional: Help us understand your specific loan needs</small>
             </div>
-            <button type="submit" class="btn-primary full-btn">Submit Application</button>
+            <button type="submit" class="btn-primary full-btn" aria-label="Submit your loan application">Submit Application</button>
             <p class="form-note">
               By submitting, you agree to be contacted by FastCredit Solutions and its lending partners.
             </p>
@@ -888,36 +861,33 @@
     </section>
 
 
+     <!-- LOAN AGENT NEAR ME SECTION -->
     <section class="section trust-section">
       <div class="container trust-grid">
         <div class="trust-content">
-          <span class="trust-badge">Trusted Digital Lending Platform</span>
+          <span class="trust-badge">Your Trusted Loan Agent Near Me</span>
           <h2>
-            Simple, Secure & Transparent
-            <span>Online Loans in India</span>
+            Best Loan Agent in <span>Kolkata, West Bengal</span>
           </h2>
           <p>
-            Fast Credit Solutions is a modern digital loan platform helping individuals
-            and businesses access personal, home, education and business loans through
-            a fully safe and secure process . We focus on speed, transparency and customer trust.
+            FastCredit Solutions is your <strong>loan agent near me</strong> in Kolkata offering fast credit solutions. We provide personal loans, home loans, business loans and all types of loans with instant approval.
           </p>
           <p>
-            Our technology-driven approach allows applicants to check eligibility,
-            calculate EMI and receive loan offers from trusted banking and NBFC partners.
+            Get loans in Kolkata within 24-48 hours with minimal documentation. We are the <strong>best loan consultant</strong> serving Kolkata, Howrah, Barasat, Durgapur and all of West Bengal.
           </p>
         </div>
         <div class="trust-stats">
           <div class="trust-card">
             <h3>Fast</h3>
-            <span>Loan Approval</span>
+            <span>Loan Approval in Kolkata</span>
           </div>
           <div class="trust-card">
             <h3>Secure</h3>
-            <span>Partner Network</span>
+            <span>Trusted Loan Agent Network</span>
           </div>
           <div class="trust-card">
-            <h3>Flexible</h3>
-            <span>EMI Options</span>
+            <h3>Local</h3>
+            <span>Serving Kolkata & West Bengal</span>
           </div>
         </div>
 
@@ -1131,6 +1101,10 @@
   ]
 }
 </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js" defer></script>
+<script src="./script.js" defer></script>
 
 </body>
 

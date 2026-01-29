@@ -108,7 +108,7 @@ When someone searches **"fast credit solution"** on Google, your website is now 
 ```
 Visit: https://search.google.com/search-console
 Click: Add property
-Enter: https://fastcreditsolutions.netlify.app
+Enter: https://fastcreditsolution.netlify.app
 Verify: Using meta tag (already in your HTML!)
 Submit: Sitemap.xml
 ```

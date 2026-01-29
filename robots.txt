@@ -3,4 +3,4 @@ Allow: /
 Disallow: /private/
 Disallow: /admin/
 
-Sitemap: https://fastcreditsolutions.netlify.app/sitemap.xml
+Sitemap: https://fastcreditsolution.netlify.app/sitemap.xml
