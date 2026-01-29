@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /admin/
 
-Sitemap: https://firstcreditsolution.netlify.app/sitemap.xml
+Sitemap: https://fastcreditsolutions.netlify.app/sitemap.xml
